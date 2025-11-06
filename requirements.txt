@@ -1,0 +1,5 @@
+streamlit
+pycryptodome
+Pillow
+numpy
+argon2-cffi
