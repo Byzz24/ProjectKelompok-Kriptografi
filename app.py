@@ -328,7 +328,7 @@ def show_main_app():
                 st.text_area("Hasil (Base64)", value=output_b64, height=150, key="output_text_area", disabled=True)
 
                 st.markdown("---")
-                st.subheader("Simpan ke Brankas Data (Kriteria 6)")
+                st.subheader("Simpan ke Brankas Data")
                 st.caption("Data di atas akan dienkripsi lagi dengan **AES-256-GCM** sebelum disimpan ke database.")
                 
                 with st.form("save_to_vault_form"):
@@ -621,3 +621,4 @@ if __name__ == "__main__":
     else:
 
         show_main_app()
+
