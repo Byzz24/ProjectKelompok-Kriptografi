@@ -591,7 +591,7 @@ def show_main_app():
                 st.error(f"Error Brankas: {e}")
 
         st.markdown("---")
-        st.subheader("Bukti Enkripsi Database (Kriteria 6)")
+        st.subheader("Enkripsi Database")
         st.caption("Data mentah di database (dienkripsi dengan AES-GCM dan ditampilkan sebagai Base64)")
         
         try:
@@ -619,4 +619,5 @@ if __name__ == "__main__":
     if not st.session_state.get('logged_in', False):
         show_login_page()
     else:
+
         show_main_app()
